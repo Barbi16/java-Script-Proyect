@@ -1,0 +1,462 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: 'Raleway', sans-serif;
+}
+
+.fondo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%vw;
+  height: 700px;
+  background-image: url("../imagenes/fondoheader.jpg");
+  background-blend-mode: normal, lighten, soft-light;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fondo .fondo__redes {
+  display: none;
+}
+
+.fondo .fondo__menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.fondo .fondo__menu .logo {
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  margin-left: 30px;
+}
+
+.fondo .fondo__menu .link {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  font-size: 16px;
+}
+
+.fondo .fondo__menu .link:hover {
+  background-color: #434343;
+}
+
+.fondo h1 {
+  color: white;
+  font-size: 80px;
+  text-align: center;
+  padding-top: 300px;
+  /*  animation-duration: 4s;
+        animation-name: titulo;
+        animation-delay: 1s;
+        animation-iteration-count: 1;
+        @keyframes titulo {
+            0%{ opacity: 0;}
+            50%{ opacity: 0.5; }
+            100%{ opacity: 1; }
+         }   */
+}
+
+.fondo .boton-reservar {
+  border-radius: 5%;
+  margin: 15px;
+  padding: 10px 15px;
+  width: 200px;
+  background-color: #262526;
+  color: #F2F1F0;
+  border: solid 2px #F2F1F0;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.fondo .boton-reservar:hover {
+  color: #262526;
+  background-color: #F2F1F0;
+  border-color: #F2F1F0;
+}
+
+.fondo a {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media screen and (max-width: 768px) {
+  .fondo .fondo__redes {
+    display: none;
+  }
+  .fondo .fondo__menu .logo {
+    margin-left: 210px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .fondo {
+    height: 600px;
+  }
+  .fondo h1 {
+    display: none;
+  }
+  .fondo a {
+    margin: auto auto;
+    display: block;
+  }
+  .fondo .fondo__redes {
+    display: inline;
+    width: 60px;
+  }
+  .fondo .fondo__redes a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .fondo .fondo__redes a:hover {
+    color: #262526;
+    background-color: gray;
+  }
+  .fondo .fondo__redes a img {
+    margin: 20px;
+  }
+  .fondo .fondo__menu .logo {
+    margin-left: 90px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .fondo .fondo__redes a {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .fondo .fondo__menu .logo {
+    margin-left: 40px;
+  }
+}
+
+footer {
+  background-color: #262526;
+  margin: 0%;
+  position: relative;
+}
+
+footer iframe {
+  margin: 0%;
+  padding: 0px 0px 30px 0px;
+  width: 100%;
+}
+
+footer hr {
+  color: white;
+}
+
+footer h6 {
+  color: wheat;
+  padding: 40px;
+  display: inline block;
+  font-size: 13px;
+  margin-bottom: 0px;
+}
+
+footer .footer__conteiner {
+  position: absolute;
+  top: 240px;
+  right: 10px;
+  width: 500px;
+}
+
+footer .footer__conteiner img {
+  display: inline-block;
+  padding: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  footer .footer__conteiner {
+    right: 1px;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  footer h6 {
+    font-size: 12px;
+  }
+  footer .footer__conteiner {
+    display: none;
+  }
+}
+
+.contenedorReservas {
+  background-color: #262526;
+  height: 1500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contenedorReservas .div-contenedorReservas {
+  border-radius: 2%;
+  background-color: #F2F1F0 !important;
+  width: 70vw;
+  padding-top: 20px;
+}
+
+.contenedorReservas .div-contenedorReservas .titulo-reservas {
+  margin-left: 400px;
+}
+
+.contenedorReservas .div-contenedorReservas .botones-reserva {
+  margin: 30px;
+  margin-left: 50px;
+  padding: 10px 2px;
+  width: 650px;
+}
+
+.contenedorReservas .div-contenedorReservas .botones-reserva .botones-reserva1 {
+  border: none;
+}
+
+.contenedorReservas .div-contenedorReservas .botones-reserva .botones-reserva2 {
+  color: black;
+  border: none;
+}
+
+#PopUp {
+  padding: 20px;
+  display: none;
+  width: 500px;
+  height: 350px;
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F2F1F0;
+  border: white 8px ridge;
+  color: #262526;
+  right: 400px;
+  top: 1200px;
+  border-radius: 5px;
+}
+
+#PopUp #X a {
+  color: #262526;
+  list-style: none;
+  text-decoration: none;
+  right: 10px;
+  position: absolute;
+  padding: 5px;
+  margin: 2px 2px;
+  font-size: 17px;
+  width: 22px;
+  height: 28px;
+}
+
+#PopUp #X a:hover {
+  background-color: red;
+  color: whitesmoke;
+}
+
+#PopUp #conteinerPopUp {
+  padding: 30px;
+}
+
+.contenedorReservas .div-contenedorReservas .formulario_reservas {
+  padding-left: 80px;
+  padding-top: 50px;
+}
+
+.contenedorReservas .div-contenedorReservas .formulario_reservas .formulario__mensaje {
+  height: 45px;
+  line-height: 45px;
+  background: #F66060;
+  padding: 0 15px;
+  border-radius: 3px;
+  display: none;
+}
+
+.contenedorReservas .div-contenedorReservas .formulario_reservas .formulario__mensaje .formulario__mensaje p {
+  margin: 0;
+}
+
+.contenedorReservas .div-contenedorReservas .formulario_reservas .formulario__mensaje-activo {
+  display: block;
+}
+
+.contenedorReservas .div-contenedorReservas .formulario_reservas .formulario__grupo-usuario {
+  position: relative;
+}
+
+.contenedorReservas .div-contenedorReservas .formulario_reservas .formulario__grupo-usuario .formulario__validacion-estado {
+  display: none;
+  position: absolute;
+  right: 270px;
+  bottom: 8px;
+}
+
+.contenedorReservas .div-contenedorReservas .formulario_reservas .formulario__grupo-usuario .i__email {
+  bottom: 35px;
+}
+
+.contenedorReservas .div-contenedorReservas .formulario_reservas .formulario__grupo-correcto .formulario__validacion-estado {
+  color: #1ed12d;
+  display: block;
+}
+
+.contenedorReservas .div-contenedorReservas .formulario_reservas .formulario__grupo-incorrecto label {
+  color: #bb2929;
+}
+
+.contenedorReservas .div-contenedorReservas .formulario_reservas .formulario__grupo-incorrecto input {
+  border: #bb2929 solid 2px;
+}
+
+.contenedorReservas .div-contenedorReservas .formulario_reservas .formulario__grupo-incorrecto .formulario__validacion-estado {
+  color: #bb2929;
+  display: block;
+}
+
+.contenedorReservas .div-contenedorReservas .formulario_reservas .formulario__input-error {
+  display: none;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.contenedorReservas .div-contenedorReservas .formulario_reservas .formulario__input-error-activo {
+  display: block;
+  color: #bb2929;
+}
+
+.contenedorReservas .div-contenedorReservas .formulario_reservas .form-control {
+  width: 70%;
+}
+
+.contenedorReservas .div-contenedorReservas .formulario_reservas .form-select {
+  width: 70%;
+  margin-top: 20px;
+}
+
+.contenedorReservas .div-contenedorReservas .formulario_reservas #itemsListas {
+  padding-left: 0px;
+}
+
+.contenedorReservas .div-contenedorReservas .formulario_reservas #itemsListas .items {
+  padding: .375rem .75rem;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  width: 70%;
+  border-radius: .25rem;
+  -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  line-height: 1.5;
+}
+
+.contenedorReservas .div-contenedorReservas .formulario_reservas #itemsListas .items #sublista {
+  display: none;
+  text-align: left;
+  list-style: disc;
+  text-decoration: none;
+  list-style: none;
+}
+
+.contenedorReservas .div-contenedorReservas .formulario_reservas #itemsListas .items #sublista .subitem:hover {
+  background-color: #262526 !important;
+  color: cornsilk;
+}
+
+.contenedorReservas .div-contenedorReservas .formulario_reservas #itemsListas #itemsSucursales {
+  margin-bottom: 50px;
+}
+
+.contenedorReservas .div-contenedorReservas .reserva_confirmada {
+  width: 800px;
+  height: 50px;
+}
+
+.contenedorReservas .div-contenedorReservas .reserva_confirmada p {
+  width: 100%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.subitem-selected {
+  background-color: #262526;
+  color: cornsilk;
+}
+
+.tipo-evento-si {
+  visibility: visible;
+}
+
+.tipo-evento-no {
+  visibility: hidden;
+}
+
+.error {
+  visibility: visible;
+}
+
+@media screen and (max-width: 768px) {
+  .contenedorReservas .div-contenedorReservas .titulo-reservas {
+    margin-left: 200px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contenedorReservas .div-contenedorReservas .titulo-reservas {
+    margin-left: 100px;
+  }
+  .contenedorReservas .div-contenedorReservas .formulario_reservas .form_tipodeEvento {
+    margin-top: 20px;
+  }
+  .contenedorReservas .div-contenedorReservas .form_comentario span {
+    width: 100%;
+  }
+  .contenedorReservas .div-contenedorReservas .botones-reserva {
+    margin-left: 3px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .contenedorReservas .div-contenedorReservas .titulo-reservas {
+    margin-left: 70px;
+  }
+  .contenedorReservas .div-contenedorReservas .formulario_reservas .botones-reserva .botones-reserva2 {
+    width: 70px !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,142 @@
+// HEADER //
+
+.fondo {
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    width: 100%vw;
+    height: 700px;
+    background-image: url("../imagenes/fondoheader.jpg");
+    background-blend-mode: normal, lighten, soft-light;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+     .fondo__redes {
+         display: none;
+     }
+     .fondo__menu {
+        width: 100%;
+        display: flex;
+        .logo {
+            flex-basis: 80%;
+            margin-left: 30px;
+        }
+        .link {
+            padding-left: 20px!important;
+            padding-right: 20px!important;
+            font-size: 16px;
+            &:hover {
+                background-color: #434343;
+            }
+        } 
+     }   
+     h1{
+        color: white;
+        font-size: 80px;
+        text-align: center;
+        padding-top: 300px;
+      /*  animation-duration: 4s;
+        animation-name: titulo;
+        animation-delay: 1s;
+        animation-iteration-count: 1;
+        @keyframes titulo {
+            0%{ opacity: 0;}
+            50%{ opacity: 0.5; }
+            100%{ opacity: 1; }
+         }   */   
+    }
+    .boton-reservar {
+       border-radius: 5%;
+      margin: 15px;
+      padding: 10px 15px;
+      width: 200px;
+      background-color: $negro;
+      color: $grisaseo;
+      border: solid 2px $grisaseo;
+      font-size: 15px;
+      font-weight: bold;
+      &:hover{
+          color: $negro;
+          background-color: $grisaseo;
+          border-color: $grisaseo;
+       
+        } 
+    }
+    a {
+      align-self: center;
+    }
+}
+
+// MEDIA QUERIES //
+@media screen and (max-width: 768px){
+    .fondo {
+        .fondo__redes {
+            display: none;
+        }
+        .fondo__menu { 
+            .logo {
+                margin-left: 210px;
+        
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    .fondo {
+        height: 600px;
+        h1 {
+            display: none;
+        }
+        a {
+            margin: auto auto;
+            display: block;
+
+
+        }
+        .fondo__redes {
+             display: inline;
+             width: 60px;
+            
+            a {
+            display: flex;
+            flex-direction: column;
+            justify-content: right;
+            align-items: flex-end;
+            &:hover {
+                color: $negro;
+                background-color: gray;
+            }
+            img{
+                margin: 20px;
+            }
+        }
+        }
+        .fondo__menu { 
+            .logo {
+                margin-left: 90px;
+        
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+ .fondo {
+     .fondo__redes {
+
+         a {
+            
+           align-items: flex-start;
+           
+         }
+         
+     }
+     .fondo__menu {
+         .logo {
+             margin-left: 40px;
+         }
+     }
+  }
+
+}  

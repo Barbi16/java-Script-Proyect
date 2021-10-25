@@ -1,0 +1,278 @@
+.contenedorReservas {
+    background-color: $negro;
+    height: 1500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .div-contenedorReservas {
+       border-radius: 2%;
+       background-color: $grisaseo !important;
+       width: 70vw;
+       padding-top: 20px;
+       .titulo-reservas{
+           margin-left: 400px;
+       }
+       .botones-reserva{
+           margin: 30px;
+           margin-left: 50px;
+           padding: 10px 2px;
+           width: 650px;
+           .botones-reserva1 {             
+               border: none;
+           }
+           .botones-reserva2 {
+               color: black;
+               border: none;
+           }
+       }
+    }
+}
+
+
+//ESTILOS QUE AGREGO PARA JS // 
+
+#PopUp {
+    padding: 20px;
+    display: none;  
+    width: 500px;
+    height: 350px;
+    position: absolute;
+    align-items: center;
+    background-color: $grisaseo;
+    border: white 8px ridge;
+    color: $negro;
+    right: 400px;
+    top: 1200px;
+    border-radius: 5px;
+        #X a {
+            color: $negro;
+            list-style: none;
+            text-decoration: none;
+            right: 10px;
+            position: absolute;
+            padding: 5px;
+            margin: 2px 2px;
+            font-size: 17px;
+            width: 22px;
+            height: 28px;
+               &:hover {
+                background-color: red;
+                color: whitesmoke;
+               }
+         }
+
+            #conteinerPopUp {
+                padding: 30px;
+
+
+            }
+        
+}
+.contenedorReservas {
+    .div-contenedorReservas {
+        .formulario_reservas {
+            padding-left: 80px;
+            padding-top: 50px;
+            .formulario__mensaje {
+                height: 45px;
+                line-height: 45px;
+                background: #F66060;
+                padding: 0 15px;
+                border-radius: 3px;
+                display: none;
+                .formulario__mensaje p {
+                    margin: 0;
+                }
+            }
+            
+            .formulario__mensaje-activo {
+                display: block;
+            }
+            
+
+            .formulario__grupo-usuario {
+                position: relative;
+                .formulario__validacion-estado {
+                    display: none;
+                    position: absolute;
+                    right: 270px;
+                    bottom: 8px;
+                }
+                .i__email {
+                    bottom: 35px;
+                }
+            }
+            //VALIDACION DE FORMULARIO//
+            .formulario__grupo-correcto .formulario__validacion-estado {
+                color: #1ed12d;
+                display: block;
+            }
+            .formulario__grupo-incorrecto { 
+
+                label {
+                    color: #bb2929;
+                }
+                input {
+                    border: #bb2929 solid 2px;
+
+                }
+                .formulario__validacion-estado {
+                    color: #bb2929;
+                    display: block;
+                }
+            }
+            
+            .formulario__input-error {
+                display: none;
+                font-size: 12px;
+                margin-top: 10px;
+            }
+            .formulario__input-error-activo {
+                display: block;
+                color: #bb2929;
+            }
+            .form-control  {
+                width: 70%;
+            }
+            .form-select {
+                width: 70%;
+                margin-top: 20px;
+            }
+
+                
+                    #itemsListas{
+                        padding-left: 0px;
+                        
+                        .items {
+                        padding: .375rem .75rem;
+                        list-style: none;
+                        background-color: #fff;
+                        background-clip: padding-box;
+                        border: 1px solid #ced4da;
+                        width: 70%;
+                        border-radius: .25rem;
+                        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+                       // padding: 10px 10px 0px 10px;
+                        line-height: 1.5;
+                        
+                        #sublista{
+                            display: none;
+                            text-align: left;
+                            list-style: disc;
+                            text-decoration: none;
+                            list-style: none;
+                            .subitem {                  
+                            &:hover {
+                                background-color: $negro !important;
+                                color: cornsilk;
+                            }
+                        }
+
+                    }
+                }
+                #itemsSucursales {
+                    margin-bottom: 50px;
+                }
+            }
+            }
+            .reserva_confirmada {
+                width: 800px;
+                height: 50px;
+                p{
+                    width: 100%;
+                    align-content: center;
+                    font-size: 18px;
+                    font-weight: 300;
+                }
+
+            }
+        }
+}
+
+
+
+.subitem-selected {
+    background-color: $negro;
+    color: cornsilk;  
+}
+
+.tipo-evento-si {
+     visibility: visible;
+}
+.tipo-evento-no{
+    visibility: hidden;
+}
+
+.error {
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// MEDIA QUERIES //
+
+@media screen and (max-width: 768px) {
+    .contenedorReservas {
+        .div-contenedorReservas { 
+           .titulo-reservas{
+              margin-left: 200px;
+           }  
+        } 
+    }    
+}
+@media screen and (max-width: 480px) {
+    .contenedorReservas {
+        .div-contenedorReservas { 
+           .titulo-reservas{
+              margin-left: 100px;
+           } 
+           .formulario_reservas {
+               .form_tipodeEvento {
+                   margin-top: 20px;
+               }
+           } 
+           .form_comentario {
+               span {
+                   width: 100%;
+               }
+           }
+           .botones-reserva {
+               margin-left: 3px;
+           }
+        } 
+    } 
+}
+@media screen and (max-width: 375px) {
+    .contenedorReservas {
+        .div-contenedorReservas { 
+           .titulo-reservas{
+              margin-left: 70px;
+           } 
+           .formulario_reservas{
+            .botones-reserva {
+                .botones-reserva2 {
+                   width: 70px !important;
+                }
+            }
+          }
+        } 
+    } 
+}

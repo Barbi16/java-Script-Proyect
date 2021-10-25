@@ -1,0 +1,9 @@
+
+{
+    "Sucursales":["Belgrano","Puerto Madero","Palermo","San isidro"],
+    "Personas" :[10, 9, 8, 7, 6, 5, 4, 3, 2, 1],
+    "Hora" : ["20.30hs", "21.30hs", "22.30hs", "23.30hs" ],
+    "Evento" : ["Aniversario", "Cumpleaños", "Negocios", "Otros"]
+}
+
+

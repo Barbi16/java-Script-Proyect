@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="restaurante, comida, chef, gourmet, platos, food, pastas, carnes, cocina, cocinero, buenos aires, ">
+    <meta name="description" content="Calificado como unos de los restaurantes mas sofisticados de Buenos Aires, Panza & Corazón te invita a que conozcas nuestros priviligiados restaurantes y una comida para llenarte de un sin fin de emociones">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+     
+    <title>Panza & Corazón- Reservas</title>
+</head>
+<body>
+    <header class="fondo">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fondo__menu">
+            <div class="logo">   
+             <a href="./index.html"> <img src="./imagenes/logo.png" width="300px" height="50px" alt=""> </a>
+            </div>
+            <div class="container-fluid display">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav menunav">
+                    <li class="nav-item">
+                      <a class="nav-link  link" aria-current="page" href="index.html#Nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link link" href="index.html#Galeria">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link link" href="./sucursales.html">Sucursales</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link link" href="./menu-ejecutivo.html">Menu Ejecutivo</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active link" href="./reservas.html">Reservas</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link link" href="./contacto.html">Contacto</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+       <h1 id="tituloPrincipal">
+           Panza & Corazón
+       </h1>  
+       <div class="fondo__redes bg-dark">
+        <a href=" " >
+          <img class="img-footer" src="./imagenes/logo-facebook-24px.png" alt="icono de twitter">
+        </a>
+        <a href="">
+          <img src="./imagenes/logo-instagram-24px.png" alt="icono de pinstragram">
+        </a>
+        <a href=""> 
+          <img src="./imagenes/logo-twitter-24px.png" alt="icono de facebook">
+         </a>
+        </div>
+       <a href="reservas.html#Reservas"><button class="boton-reservar">RESERVA TU LUGAR</button></a>       
+ </header> 
+  <main>
+    <!-- VENTANA EMERGENTE -->
+     <div id="PopUp">
+       <div id="X"><a href="#">X</a></div>
+       <div id="conteinerPopUp"></div>
+     </div>
+      <section id="Reservas" class="contenedorReservas">
+        <div class="container border border-light bg-light div-contenedorReservas">
+          <h3 class="titulo-reservas">
+            Reservas
+          </h3>
+          <form class="formulario_reservas " action="" id="containerPadre">
+
+            <!-- INPUT PARA NOMBRE -->
+            <div class="mb-3 containerHijo formulario__grupo" id="grupo__nombre" >
+              <label for="nombre" class="form-label formulario__label"> Nombre</label>
+              <div class="formulario__grupo-usuario"> 
+                <input type="text" class="form-control inputs informacion"  data-nombre="nombre" id="nombre" aria-describedby="emailHelp" placeholder="Ingrese su Nombre">    
+                <i class="formulario__validacion-estado bi bi-exclamation-circle-fill"></i>
+              </div>
+              <p class="formulario__input-error">No debe dejar espacios en blanco ni contener numeros  y caracteres</p>
+            </div>
+
+
+            <!-- INPUT PARA EMAIL-->
+            <div class="mb-3 containerHijo formulario__grupo" id="grupo__email">
+              <label for="email" class="form-label formulario__label">Correo electronico</label>
+              <div class="formulario__grupo-usuario">
+                <input type="email" class="form-control inputs informacion" data-nombre="email"  id="email" aria-describedby="emailHelp" placeholder="alguien@alguien.com">
+                <i class="formulario__validacion-estado bi bi-exclamation-circle-fill i__email"></i>
+                <div id="emailHelp" class="form-text">Jamas compartiremos su correo electronico.</div>
+              </div>
+              <p class="formulario__input-error">El email solo puede contener numeros, letras, guiones, guion bajo y puntos</p>
+            </div>
+
+            <!-- LISTA SUCURSALES -->
+            <ul class="listas form-label" id="itemsListas">
+              <li class="items" id="itemsSucursales">Sucursales
+                <ul class="sublistaSucursales" id="sublista">
+                </ul>
+              </li>
+
+            <!-- LISTA PERSONAS -->
+              <li class="items" id="itemsPersonas"> Personas
+                <ul class="sublistaPersonas" id="sublista"> 
+                </ul>
+              </li>
+            </ul>	
+            <br> <br>
+
+            <!-- CALENDARIO -->
+            <div class="mb-3">
+              <label for="Calenderio" class="form-label">Fecha</label>
+              <input class="informacion inputs" data-nombre="calendario" type="date" name="calendario"> 
+            </div>
+
+            <!-- HORARIO -->
+            <div class="mb-3">
+              <select class="form-select informacion hora" data-nombre="hora" aria-label="Default select example" name="Hora" id="optionsHora">
+                <option value="Horario" selected>
+                  Horario
+                </option>
+              </select>
+            </div>
+            
+            <!-- EVENTO ESPECIAL? -->	
+            <fieldset class="row mb-3">
+              <legend class="col-form-label col-sm-2 pt-0">
+                ¿Evento especial?
+              </legend>
+              <fieldset class="col-sm-10">
+                <div class="form-check" id="eventoSi">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                  <label class="form-check-label"  for="gridRadios1">
+                    Si
+                  </label>
+                </div>
+                <div class="form-check" id="eventoNo">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                  <label class="form-check-label" for="gridRadios2">
+                    No
+                  </label>
+                </div>
+              </fieldset>
+            </fieldset>
+
+              <!-- TIPO DE EVENTO -->
+            <div class="mb-3 form_tipodeEvento" id="tipo-evento-selected">
+              <select  class="form-select informacion" aria-label="Default select example" data-nombre="Tipo-de-evento" name="Tipo-de-evento" id="optionsEvento">
+                  <option selected value="tipo-eventos">
+                    Tipo de Evento
+                  </option>
+              </select> 
+            </div>				
+
+            <!-- DEJAR COMENTARIO -->
+            <div class="input-group reserv-ttarea form_comentario"  >
+              <span class="input-group-text">Deja un comentario</span>
+              <textarea class="form-control informacion" data-nombre="comentario" aria-label="With textarea">
+              </textarea>
+            </div>
+           <div class="reserva_confirmada" id=reservaConfirmada></div>
+
+           <!-- MENSAJE DE ERROR-->
+          <div class=" formulario__mensaje" id="formulario__mensaje">
+           <p> <i class="bi bi-exclamation-triangle-fill"></i> <b> Error: <b> Por favor rellena el formulario correctamente. </p>
+         </div>
+
+          <!-- BOTONES-->
+            <div class="reserv-bottom d-inline-flex mb-3 botones-reserva">
+              <input id="enviar" class="btn btn-warning w-25  d-inline-block m-auto botones-reserva1" value="Enviar">
+              <input type="reset" class="btn btn-secondary w-25  d-inline-block m-auto botones-reserva2" value="Limpiar">   
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6568.590725986395!2d-58.394844!3d-34.596692!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x518ad4850449560!2sLa%20Parolaccia%20Barrio%20Norte!5e0!3m2!1ses!2sus!4v1623773133102!5m2!1ses!2sus" width="100%" height="200px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <hr>
+        <h6>
+            © 2021 Panza & Corazón All Rights Reserved.
+        </h6>
+		<div class="footer__conteiner">
+			<img src="./imagenes/logo-facebook-24px.png" alt="icono de twitter">
+			<img src="./imagenes/logo-instagram-24px.png" alt="icono de pinstragram">
+			<img src="./imagenes/logo-twitter-24px.png" alt="icono de facebook">
+			</div>
+
+    </footer>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="./js/script-popUp.js"></script>
+	<script src="./js/script-json.js"></script>
+	<script src="./js/script-titulo.js"></script>
+	<script src="./js/script-listas.js"></script>
+  <script src="./js/script-validacion.js"></script>
+	<script src="./js/script-cargarPag.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
